@@ -1,0 +1,52 @@
+.copyright {
+    font-size: 9px;
+    color: #000000!important;
+}
+.font-12{
+    font-size: 12px!important;
+}
+.font-14{
+    font-size: 14px!important;
+}
+.font-37{
+    font-size: 37px!important;
+}
+.font-45{
+    font-size: 45px!important;
+}
+.font-35{
+    font-size: 35px!important;
+}
+i{
+  color: #fd7992!important;
+}
+.min-height-490{
+  min-height: 490px;
+}
+.car-wrap{
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1)!important;
+}
+.car-wrap:hover{
+    box-shadow: 0 0 13px 0 rgba(239, 242, 249, .1)!important;
+    cursor: pointer;
+}
+.btn-pink{
+  color: white!important;
+  background-color:  #fd7992!important;
+  font-family: Vazir!important;
+  font-weight: 600!important;
+  font-size: 20px;
+}
+.btn-pink-outline{
+  color: #fd7992!important;
+  background-color:  white!important;
+  font-family: Vazir!important;
+  font-weight: 900!important;
+  font-size: 20px;
+}
+.vazir{
+  font-family: Vazir!important;
+}
+.rezvan{
+  font-family: Rezvan!important;
+}
