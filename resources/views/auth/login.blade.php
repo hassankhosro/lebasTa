@@ -36,14 +36,14 @@
                     @include('layouts.errors')
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email" value="{{ old('email') }}">
+                        <input class="input100" type="text" name="email" placeholder="ایمیل" value="{{ old('email') }}">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="lnr lnr-envelope"></span>
 						</span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-                        <input class="input100" type="password" name="password" placeholder="Password">
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "پسورد الزامی است">
+                        <input class="input100" type="password" name="password" placeholder="کلمه عبور">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="lnr lnr-lock"></span>

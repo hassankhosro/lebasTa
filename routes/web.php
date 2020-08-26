@@ -21,7 +21,7 @@ Route::namespace('UserDashboard')->prefix('user-dashboard')->middleware('auth')-
 
     Route::get('/', 'DashboardController@index')->name('dashboard');
     Route::get('verification', 'VerificationController@index')->name('verification.index');
-    // Route::get('verification/sms/{mobileCode?}', 'VerificationController@sms')->name('verification.sms');
+    Route::post('verification/sms/{mobileCode?}', 'VerificationController@sms')->name('verification.sms');
     // Route::resource('ads', 'UserController');
 
 

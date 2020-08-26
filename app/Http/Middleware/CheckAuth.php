@@ -16,7 +16,7 @@ class CheckAuth
     public function handle($request, Closure $next)
     {
         if (\Auth::check() && strstr($request->route()->getPrefix(),"user-dashboard") == 'user-dashboard') {
-            if (\Auth::user()->status <= 1) {
+            if (\Auth::user()->status != 1) {
                 if ($request->route()->getName() == 'verification.index' or $request->route()->getName() == 'verification.sms' or $request->route()->getName() == 'logout') {
                     return $next($request);
                 }

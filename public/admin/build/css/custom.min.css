@@ -5,6 +5,13 @@ ul.quick-list li {
     white-space: nowrap;
 }
 
+.alert-dismissable .close,
+.alert-dismissible .close {
+    position: relative;
+    top: -11px;
+    color: inherit;
+}
+
 .detail a,
 .expand,
 .jqstooltip,
@@ -802,6 +809,10 @@ body.persian_num {
     font-family: IRANSans_FaNum, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
 }
 
+.persian_num {
+    font-family: IRANSans_FaNum, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
+}
+
 body.vazir {
     font-family: Vazir, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
 }
@@ -816,6 +827,10 @@ body .container.body .right_col {
 
 .tooltip,
 body.iransans .tooltip {
+    font-family: IRANSans, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
+}
+
+.iransans {
     font-family: IRANSans, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
 }
 
@@ -1276,8 +1291,15 @@ h3 {
 }
 
 .row {
-    margin-right: -10px;
-    margin-left: -10px;
+    display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+ margin-right: -15px;
+ margin-left: -15px;
 }
 
 h3.degrees {
@@ -5290,4 +5312,13 @@ body.lock #lock_screen table {
 
 body.lock #lock_screen .unlock {
     cursor: pointer;
+}
+
+cursor: pointer;
+
+}
+cursor: pointer;
+
+}
+
 }

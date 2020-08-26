@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="fontiran.com:license" content="Y68A9">
     <link rel="icon" href="admin/build/images/favicon.ico" type="image/ico"/>
-    <title>Gentelella Alela! | قالب مدیریت رایگان </title>
+    <title>پنل کاربری</title>
 
     <!-- Bootstrap -->
     <link href="/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -60,9 +60,9 @@
                     <div class="menu_section">
                         <h3>عمومی</h3>
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-dashboard"></i> گزارشات</a>
+                            <li class="w-100"><a href="{{ route('dashboard') }}"><i class="fa fa-dashboard"></i> گزارشات</a>
                             </li>
-                            <li><a><i class="fa fa-home"></i> مدیریت آگهی ها <span class="fa fa-chevron-down"></span></a>
+                            <li class="w-100"><a><i class="fa fa-home"></i> مدیریت آگهی ها <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="index.html">افزودن آگهی جدید</a></li>
                                     <li><a href="index2.html">آگهی های شما</a></li>
@@ -98,11 +98,11 @@
         <div class="top_nav hidden-print">
             <div class="nav_menu">
                 <nav>
-                    <div class="nav toggle">
+                    <div class="toggle">
                         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                     </div>
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="d-block nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                aria-expanded="false">
@@ -270,6 +270,7 @@
 
 <!-- Custom Theme Scripts -->
 <script src="/admin/build/js/custom.min.js"></script>
+<script src="/admin/src/js/sweetalert.min.js"></script>
 
 
 </body>
