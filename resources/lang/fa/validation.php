@@ -251,6 +251,7 @@ return array(
         'on' => 'فعال',
         'color_amount' => 'موجودی رنگ',
         'method_of_introduction' => 'نحوه آشنایی',
+        'verification_code' => 'کد تایید',
 
           ),
 );

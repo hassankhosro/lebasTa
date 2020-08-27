@@ -5,7 +5,7 @@
 </style>
 @endsection
 @section('content')
-<div class="row justify-content-center">
+<div class="justify-content-center w-100 d-flex">
 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
     <div class="x_content bs-example-popovers">
         @if(\Auth::user()->status != 1)            
@@ -18,7 +18,7 @@
         <div class="alert alert-success alert-dismissible fade in" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
             </button>
-         حساب کاربری شما قبلا فعال شده است
+         حساب کاربری شما فعال شده است
         </div>
         @endif
 

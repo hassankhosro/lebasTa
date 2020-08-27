@@ -25,10 +25,15 @@ class VerificationRequest extends FormRequest
      * @return array
      */
     public function rules()
-    {
-        {{ dd('sj') }}
+{
+
+    if(request()->has('verify')){
         return [
-            //
+            'verification_code' => 'numeric|digits:4|regex:/^[0-9]+$/u',
+            'verify' => 'nullable|regex:/^[ا-یa-zA-Z0-9\-۰-۹ ]+$/u',
         ];
+    }
+    else
+    return [];
     }
 }

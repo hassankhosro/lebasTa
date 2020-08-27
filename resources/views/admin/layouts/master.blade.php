@@ -26,6 +26,7 @@
 
     <!-- Custom Theme Style -->
     <link href="/admin/build/css/custom.min.css" rel="stylesheet">
+    <link href="/admin/build/css/custom2.css" rel="stylesheet">
     @yield('headerStyles')
 
 </head>
@@ -36,7 +37,7 @@
         <div class="col-md-3 left_col hidden-print">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+                    <a href="{{ route('home') }}" class="site_title" target="_blank"><i class="fa fa-paw"></i> <span>لباستا</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -44,7 +45,7 @@
                 <!-- menu profile quick info -->
                 <div class="profile clearfix">
                     <div class="profile_pic">
-                        <img src="/admin/build/images/img.jpg" alt="admin." class="img-circle profile_img">
+                        <img src="{{ \auth::user()->avatar }}" alt="admin." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span>خوش آمدید,</span>
@@ -106,19 +107,11 @@
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                aria-expanded="false">
-                                <img src="/admin/build/images/img.jpg" alt="">مرتضی کریمی
+                                <img src="{{ \auth::user()->avatar }}" alt="">مرتضی کریمی
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="javascript:;"> نمایه</a></li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>تنظیمات</span>
-                                    </a>
-                                </li>
-                                <li><a href="javascript:;">کمک</a></li>
-                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> خروج</a></li>
+                                <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out pull-right"></i> خروج</a></li>
                             </ul>
                         </li>
 
@@ -131,7 +124,7 @@
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/admin/build/images/img.jpg"
+                                        <span class="image"><img src="{{ \auth::user()->avatar }}"
                                                                  alt="Profile Image"/></span>
                                         <span>
                           <span>مرتضی کریمی</span>
@@ -144,7 +137,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/admin/build/images/img.jpg"
+                                        <span class="image"><img src="{{ \auth::user()->avatar }}"
                                                                  alt="Profile Image"/></span>
                                         <span>
                           <span>مرتضی کریمی</span>
@@ -157,7 +150,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/admin/build/images/img.jpg"
+                                        <span class="image"><img src="{{ \auth::user()->avatar }}"
                                                                  alt="Profile Image"/></span>
                                         <span>
                           <span>مرتضی کریمی</span>
@@ -170,7 +163,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/admin/build/images/img.jpg"
+                                        <span class="image"><img src="{{ \auth::user()->avatar }}"
                                                                  alt="Profile Image"/></span>
                                         <span>
                           <span>مرتضی کریمی</span>
@@ -197,6 +190,7 @@
         </div>
         <!-- /top navigation -->
         <div class="right_col" role="main">
+            @include('admin.layouts.errors')
 
         @yield('content')
     </div>
