@@ -22,7 +22,7 @@ Route::namespace('UserDashboard')->prefix('user-dashboard')->middleware('auth')-
     Route::get('/', 'DashboardController@index')->name('dashboard');
     Route::get('verification', 'VerificationController@index')->name('verification.index');
     Route::any('verification/sms/{mobileCode?}', 'VerificationController@sms')->name('verification.sms');
-    // Route::resource('ads', 'UserController');
+    Route::resource('ads', 'AdsController');
 
 
 });

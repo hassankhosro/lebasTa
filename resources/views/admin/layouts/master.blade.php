@@ -27,6 +27,8 @@
     <!-- Custom Theme Style -->
     <link href="/admin/build/css/custom.min.css" rel="stylesheet">
     <link href="/admin/build/css/custom2.css" rel="stylesheet">
+   
+
     @yield('headerStyles')
 
 </head>
@@ -65,8 +67,8 @@
                             </li>
                             <li class="w-100"><a><i class="fa fa-home"></i> مدیریت آگهی ها <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="index.html">افزودن آگهی جدید</a></li>
-                                    <li><a href="index2.html">آگهی های شما</a></li>
+                                    <li><a href="{{ route('ads.index') }}">آگهی های شما</a></li>
+                                    <li><a href="{{ route('ads.create') }}">افزودن آگهی جدید</a></li>
                                 </ul>
                             </li>
 
@@ -261,18 +263,23 @@
 <script src="/admin/vendors/jqvmap/dist/jquery.vmap.js"></script>
 <script src="/admin/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <script src="/admin/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<script src="/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="/admin/build/js/custom.min.js"></script>
 <script src="/admin/src/js/sweetalert.min.js"></script>
-
-
-</body>
-</html>
+<link rel="stylesheet" type="text/css" href="/admin/DataTables/datatables.min.css"/>
+<script type="text/javascript" src="/admin/DataTables/datatables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
 @toastr_js
 @toastr_render
 @include('sweet::alert')
 @yield('pageScripts')
+
 </body>
 </html>
