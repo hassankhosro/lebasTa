@@ -21,17 +21,20 @@
     <link href="/admin/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="/admin/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- bootstrap-daterangepicker -->
-    <link href="/admin/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="/bower-components/select2/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- Custom Theme Style -->
     <link href="/admin/build/css/custom.min.css" rel="stylesheet">
     <link href="/admin/build/css/custom2.css" rel="stylesheet">
-   
+    <link href="/admin/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/DataTables/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/admin/DataTables/responsive.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/admin/DataTables/responsive.dataTables.min.css"/>
 
     @yield('headerStyles')
 
 </head>
+
 <!-- /header content -->
 <body class="nav-md vazir">
 <div class="container body">
@@ -195,6 +198,7 @@
             @include('admin.layouts.errors')
 
         @yield('content')
+        
     </div>
 
         <!-- /page content -->
@@ -221,6 +225,7 @@
         </tr>
     </table>
 </div>
+<script src="/js/app.js"></script>
 <!-- jQuery -->
 <script src="/admin/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -264,17 +269,13 @@
 <script src="/admin/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <script src="/admin/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 <script src="/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+<script src="/bower-components/select2/dist/js/select2.min.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="/admin/build/js/custom.min.js"></script>
 <script src="/admin/src/js/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/admin/DataTables/datatables.min.css"/>
-<script type="text/javascript" src="/admin/DataTables/datatables.min.js"></script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/admin/DataTables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/admin/DataTables/dataTables.responsive.min.js"></script>
 
 @toastr_js
 @toastr_render

@@ -4197,22 +4197,7 @@ fieldset {
   }
 }
 
-.form_wizard {
-  .stepContainer {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0 solid $color_celeste_approx;
-    overflow-x: hidden;
-  }
-  .loader {
-    display: none;
-  }
-  .msgBox {
-    display: none;
-  }
-}
+
 
 .step_no {
   background: $color_pickled_bluewood_approx;

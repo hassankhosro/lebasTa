@@ -33,6 +33,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a806c12c6e24e7e4e900847766218dba' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/functions.php',
         '101b35f72e0ccb1b5ef72aa86bba3ef9' => __DIR__ . '/..' . '/yoeunes/toastr/src/helpers.php',
@@ -45,6 +46,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         ),
         'p' => 
         array (
+            'phpseclib\\' => 10,
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'Y' => 
@@ -97,6 +99,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
         ),
         'R' => 
         array (
@@ -121,6 +124,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         ),
         'N' => 
         array (
+            'Nyholm\\Psr7\\' => 12,
             'NunoMaduro\\Collision\\' => 21,
         ),
         'M' => 
@@ -129,17 +133,26 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         ),
         'L' => 
         array (
+            'League\\OAuth2\\Server\\' => 21,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
+            'League\\Event\\' => 13,
             'League\\CommonMark\\' => 18,
+            'Lcobucci\\JWT\\' => 13,
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
+            'Laravel\\Passport\\Database\\Factories\\' => 36,
+            'Laravel\\Passport\\' => 17,
         ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\' => 11,
+        ),
+        'H' => 
+        array (
+            'Http\\Message\\' => 13,
         ),
         'G' => 
         array (
@@ -151,6 +164,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'F' => 
         array (
             'Fruitcake\\Cors\\' => 15,
+            'Firebase\\JWT\\' => 13,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
             'Facade\\Ignition\\' => 16,
@@ -167,6 +181,7 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Common\\Lexer\\' => 22,
+            'Defuse\\Crypto\\' => 14,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -189,6 +204,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'phpseclib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (
@@ -328,6 +347,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Symfony\\Bridge\\PsrHttpMessage\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -350,7 +373,8 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\EventDispatcher\\' => 
         array (
@@ -376,6 +400,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
+        'Nyholm\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nyholm/psr7/src',
+        ),
         'NunoMaduro\\Collision\\' => 
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
@@ -383,6 +411,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'League\\OAuth2\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/oauth2-server/src',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -392,9 +424,17 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
+        'League\\Event\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/event/src',
+        ),
         'League\\CommonMark\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
+        ),
+        'Lcobucci\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
         ),
         'Laravel\\Ui\\' => 
         array (
@@ -403,6 +443,14 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Laravel\\Passport\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/passport/database/factories',
+        ),
+        'Laravel\\Passport\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/passport/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -416,6 +464,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message-factory/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -436,6 +488,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Fideloper\\Proxy\\' => 
         array (
@@ -477,6 +533,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
+        'Defuse\\Crypto\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/defuse/php-encryption/src',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -516,14 +576,21 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\API\\BaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/BaseController.php',
+        'App\\Http\\Controllers\\API\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/CategoryController.php',
+        'App\\Http\\Controllers\\API\\MesonController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/MesonController.php',
+        'App\\Http\\Controllers\\API\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserDashboard/CategoryController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\MesonController' => __DIR__ . '/../..' . '/app/Http/Controllers/MesonController.php',
+        'App\\Http\\Controllers\\UserDashboard\\AdsController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserDashboard/AdsController.php',
         'App\\Http\\Controllers\\UserDashboard\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserDashboard/DashboardController.php',
         'App\\Http\\Controllers\\UserDashboard\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserDashboard/VerificationController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -537,7 +604,14 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\VerificationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/VerificationRequest.php',
+        'App\\Http\\Resources\\Category' => __DIR__ . '/../..' . '/app/Http/Resources/Category.php',
+        'App\\Http\\Resources\\Group' => __DIR__ . '/../..' . '/app/Http/Resources/Group.php',
+        'App\\Http\\Resources\\Meson' => __DIR__ . '/../..' . '/app/Http/Resources/Meson.php',
         'App\\Models\\Ads' => __DIR__ . '/../..' . '/app/Models/Ads.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\Group' => __DIR__ . '/../..' . '/app/Models/Group.php',
+        'App\\Models\\Meson' => __DIR__ . '/../..' . '/app/Models/Meson.php',
+        'App\\Models\\Token' => __DIR__ . '/../..' . '/app/Models/Token.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -647,6 +721,10 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'Database\\Factories\\AdsFactory' => __DIR__ . '/../..' . '/database/factories/AdsFactory.php',
+        'Database\\Factories\\MesonFactory' => __DIR__ . '/../..' . '/database/factories/MesonFactory.php',
+        'Database\\Factories\\TokenFactory' => __DIR__ . '/../..' . '/database/factories/TokenFactory.php',
+        'Database\\Seeders\\AdsSeeder' => __DIR__ . '/../..' . '/database/seeds/AdsSeeder.php',
+        'Database\\Seeders\\MesonSeeder' => __DIR__ . '/../..' . '/database/seeds/MesonSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -671,6 +749,20 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'Defuse\\Crypto\\Core' => __DIR__ . '/..' . '/defuse/php-encryption/src/Core.php',
+        'Defuse\\Crypto\\Crypto' => __DIR__ . '/..' . '/defuse/php-encryption/src/Crypto.php',
+        'Defuse\\Crypto\\DerivedKeys' => __DIR__ . '/..' . '/defuse/php-encryption/src/DerivedKeys.php',
+        'Defuse\\Crypto\\Encoding' => __DIR__ . '/..' . '/defuse/php-encryption/src/Encoding.php',
+        'Defuse\\Crypto\\Exception\\BadFormatException' => __DIR__ . '/..' . '/defuse/php-encryption/src/Exception/BadFormatException.php',
+        'Defuse\\Crypto\\Exception\\CryptoException' => __DIR__ . '/..' . '/defuse/php-encryption/src/Exception/CryptoException.php',
+        'Defuse\\Crypto\\Exception\\EnvironmentIsBrokenException' => __DIR__ . '/..' . '/defuse/php-encryption/src/Exception/EnvironmentIsBrokenException.php',
+        'Defuse\\Crypto\\Exception\\IOException' => __DIR__ . '/..' . '/defuse/php-encryption/src/Exception/IOException.php',
+        'Defuse\\Crypto\\Exception\\WrongKeyOrModifiedCiphertextException' => __DIR__ . '/..' . '/defuse/php-encryption/src/Exception/WrongKeyOrModifiedCiphertextException.php',
+        'Defuse\\Crypto\\File' => __DIR__ . '/..' . '/defuse/php-encryption/src/File.php',
+        'Defuse\\Crypto\\Key' => __DIR__ . '/..' . '/defuse/php-encryption/src/Key.php',
+        'Defuse\\Crypto\\KeyOrPassword' => __DIR__ . '/..' . '/defuse/php-encryption/src/KeyOrPassword.php',
+        'Defuse\\Crypto\\KeyProtectedByPassword' => __DIR__ . '/..' . '/defuse/php-encryption/src/KeyProtectedByPassword.php',
+        'Defuse\\Crypto\\RuntimeTests' => __DIR__ . '/..' . '/defuse/php-encryption/src/RuntimeTests.php',
         'Doctrine\\Common\\Lexer\\AbstractLexer' => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php',
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
         'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
@@ -1400,6 +1492,11 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
+        'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
+        'Firebase\\JWT\\JWK' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWK.php',
+        'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
+        'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
         'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/HandleCors.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
@@ -1553,6 +1650,11 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'Http\\Message\\MessageFactory' => __DIR__ . '/..' . '/php-http/message-factory/src/MessageFactory.php',
+        'Http\\Message\\RequestFactory' => __DIR__ . '/..' . '/php-http/message-factory/src/RequestFactory.php',
+        'Http\\Message\\ResponseFactory' => __DIR__ . '/..' . '/php-http/message-factory/src/ResponseFactory.php',
+        'Http\\Message\\StreamFactory' => __DIR__ . '/..' . '/php-http/message-factory/src/StreamFactory.php',
+        'Http\\Message\\UriFactory' => __DIR__ . '/..' . '/php-http/message-factory/src/UriFactory.php',
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
         'Illuminate\\Auth\\Access\\HandlesAuthorization' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',
@@ -2490,6 +2592,69 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Passport\\ApiTokenCookieFactory' => __DIR__ . '/..' . '/laravel/passport/src/ApiTokenCookieFactory.php',
+        'Laravel\\Passport\\AuthCode' => __DIR__ . '/..' . '/laravel/passport/src/AuthCode.php',
+        'Laravel\\Passport\\Bridge\\AccessToken' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/AccessToken.php',
+        'Laravel\\Passport\\Bridge\\AccessTokenRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/AccessTokenRepository.php',
+        'Laravel\\Passport\\Bridge\\AuthCode' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/AuthCode.php',
+        'Laravel\\Passport\\Bridge\\AuthCodeRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/AuthCodeRepository.php',
+        'Laravel\\Passport\\Bridge\\Client' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/Client.php',
+        'Laravel\\Passport\\Bridge\\ClientRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/ClientRepository.php',
+        'Laravel\\Passport\\Bridge\\FormatsScopesForStorage' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/FormatsScopesForStorage.php',
+        'Laravel\\Passport\\Bridge\\PersonalAccessGrant' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/PersonalAccessGrant.php',
+        'Laravel\\Passport\\Bridge\\RefreshToken' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/RefreshToken.php',
+        'Laravel\\Passport\\Bridge\\RefreshTokenRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/RefreshTokenRepository.php',
+        'Laravel\\Passport\\Bridge\\Scope' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/Scope.php',
+        'Laravel\\Passport\\Bridge\\ScopeRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/ScopeRepository.php',
+        'Laravel\\Passport\\Bridge\\User' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/User.php',
+        'Laravel\\Passport\\Bridge\\UserRepository' => __DIR__ . '/..' . '/laravel/passport/src/Bridge/UserRepository.php',
+        'Laravel\\Passport\\Client' => __DIR__ . '/..' . '/laravel/passport/src/Client.php',
+        'Laravel\\Passport\\ClientRepository' => __DIR__ . '/..' . '/laravel/passport/src/ClientRepository.php',
+        'Laravel\\Passport\\Console\\ClientCommand' => __DIR__ . '/..' . '/laravel/passport/src/Console/ClientCommand.php',
+        'Laravel\\Passport\\Console\\HashCommand' => __DIR__ . '/..' . '/laravel/passport/src/Console/HashCommand.php',
+        'Laravel\\Passport\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/passport/src/Console/InstallCommand.php',
+        'Laravel\\Passport\\Console\\KeysCommand' => __DIR__ . '/..' . '/laravel/passport/src/Console/KeysCommand.php',
+        'Laravel\\Passport\\Console\\PurgeCommand' => __DIR__ . '/..' . '/laravel/passport/src/Console/PurgeCommand.php',
+        'Laravel\\Passport\\Database\\Factories\\ClientFactory' => __DIR__ . '/..' . '/laravel/passport/database/factories/ClientFactory.php',
+        'Laravel\\Passport\\Events\\AccessTokenCreated' => __DIR__ . '/..' . '/laravel/passport/src/Events/AccessTokenCreated.php',
+        'Laravel\\Passport\\Events\\RefreshTokenCreated' => __DIR__ . '/..' . '/laravel/passport/src/Events/RefreshTokenCreated.php',
+        'Laravel\\Passport\\Exceptions\\InvalidAuthTokenException' => __DIR__ . '/..' . '/laravel/passport/src/Exceptions/InvalidAuthTokenException.php',
+        'Laravel\\Passport\\Exceptions\\MissingScopeException' => __DIR__ . '/..' . '/laravel/passport/src/Exceptions/MissingScopeException.php',
+        'Laravel\\Passport\\Exceptions\\OAuthServerException' => __DIR__ . '/..' . '/laravel/passport/src/Exceptions/OAuthServerException.php',
+        'Laravel\\Passport\\Guards\\TokenGuard' => __DIR__ . '/..' . '/laravel/passport/src/Guards/TokenGuard.php',
+        'Laravel\\Passport\\HasApiTokens' => __DIR__ . '/..' . '/laravel/passport/src/HasApiTokens.php',
+        'Laravel\\Passport\\Http\\Controllers\\AccessTokenController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/AccessTokenController.php',
+        'Laravel\\Passport\\Http\\Controllers\\ApproveAuthorizationController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/ApproveAuthorizationController.php',
+        'Laravel\\Passport\\Http\\Controllers\\AuthorizationController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/AuthorizationController.php',
+        'Laravel\\Passport\\Http\\Controllers\\AuthorizedAccessTokenController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/AuthorizedAccessTokenController.php',
+        'Laravel\\Passport\\Http\\Controllers\\ClientController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/ClientController.php',
+        'Laravel\\Passport\\Http\\Controllers\\ConvertsPsrResponses' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/ConvertsPsrResponses.php',
+        'Laravel\\Passport\\Http\\Controllers\\DenyAuthorizationController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/DenyAuthorizationController.php',
+        'Laravel\\Passport\\Http\\Controllers\\HandlesOAuthErrors' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/HandlesOAuthErrors.php',
+        'Laravel\\Passport\\Http\\Controllers\\PersonalAccessTokenController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/PersonalAccessTokenController.php',
+        'Laravel\\Passport\\Http\\Controllers\\RetrievesAuthRequestFromSession' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/RetrievesAuthRequestFromSession.php',
+        'Laravel\\Passport\\Http\\Controllers\\ScopeController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/ScopeController.php',
+        'Laravel\\Passport\\Http\\Controllers\\TransientTokenController' => __DIR__ . '/..' . '/laravel/passport/src/Http/Controllers/TransientTokenController.php',
+        'Laravel\\Passport\\Http\\Middleware\\CheckClientCredentials' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CheckClientCredentials.php',
+        'Laravel\\Passport\\Http\\Middleware\\CheckClientCredentialsForAnyScope' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CheckClientCredentialsForAnyScope.php',
+        'Laravel\\Passport\\Http\\Middleware\\CheckCredentials' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CheckCredentials.php',
+        'Laravel\\Passport\\Http\\Middleware\\CheckForAnyScope' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CheckForAnyScope.php',
+        'Laravel\\Passport\\Http\\Middleware\\CheckScopes' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CheckScopes.php',
+        'Laravel\\Passport\\Http\\Middleware\\CreateFreshApiToken' => __DIR__ . '/..' . '/laravel/passport/src/Http/Middleware/CreateFreshApiToken.php',
+        'Laravel\\Passport\\Http\\Rules\\RedirectRule' => __DIR__ . '/..' . '/laravel/passport/src/Http/Rules/RedirectRule.php',
+        'Laravel\\Passport\\Passport' => __DIR__ . '/..' . '/laravel/passport/src/Passport.php',
+        'Laravel\\Passport\\PassportServiceProvider' => __DIR__ . '/..' . '/laravel/passport/src/PassportServiceProvider.php',
+        'Laravel\\Passport\\PassportUserProvider' => __DIR__ . '/..' . '/laravel/passport/src/PassportUserProvider.php',
+        'Laravel\\Passport\\PersonalAccessClient' => __DIR__ . '/..' . '/laravel/passport/src/PersonalAccessClient.php',
+        'Laravel\\Passport\\PersonalAccessTokenFactory' => __DIR__ . '/..' . '/laravel/passport/src/PersonalAccessTokenFactory.php',
+        'Laravel\\Passport\\PersonalAccessTokenResult' => __DIR__ . '/..' . '/laravel/passport/src/PersonalAccessTokenResult.php',
+        'Laravel\\Passport\\RefreshToken' => __DIR__ . '/..' . '/laravel/passport/src/RefreshToken.php',
+        'Laravel\\Passport\\RefreshTokenRepository' => __DIR__ . '/..' . '/laravel/passport/src/RefreshTokenRepository.php',
+        'Laravel\\Passport\\RouteRegistrar' => __DIR__ . '/..' . '/laravel/passport/src/RouteRegistrar.php',
+        'Laravel\\Passport\\Scope' => __DIR__ . '/..' . '/laravel/passport/src/Scope.php',
+        'Laravel\\Passport\\Token' => __DIR__ . '/..' . '/laravel/passport/src/Token.php',
+        'Laravel\\Passport\\TokenRepository' => __DIR__ . '/..' . '/laravel/passport/src/TokenRepository.php',
+        'Laravel\\Passport\\TransientToken' => __DIR__ . '/..' . '/laravel/passport/src/TransientToken.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -2503,6 +2668,39 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Laravel\\Ui\\Presets\\Vue' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Vue.php',
         'Laravel\\Ui\\UiCommand' => __DIR__ . '/..' . '/laravel/ui/src/UiCommand.php',
         'Laravel\\Ui\\UiServiceProvider' => __DIR__ . '/..' . '/laravel/ui/src/UiServiceProvider.php',
+        'Lcobucci\\JWT\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Builder.php',
+        'Lcobucci\\JWT\\Claim' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim.php',
+        'Lcobucci\\JWT\\Claim\\Basic' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Basic.php',
+        'Lcobucci\\JWT\\Claim\\EqualsTo' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/EqualsTo.php',
+        'Lcobucci\\JWT\\Claim\\Factory' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Factory.php',
+        'Lcobucci\\JWT\\Claim\\GreaterOrEqualsTo' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/GreaterOrEqualsTo.php',
+        'Lcobucci\\JWT\\Claim\\LesserOrEqualsTo' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/LesserOrEqualsTo.php',
+        'Lcobucci\\JWT\\Claim\\Validatable' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Validatable.php',
+        'Lcobucci\\JWT\\Parser' => __DIR__ . '/..' . '/lcobucci/jwt/src/Parser.php',
+        'Lcobucci\\JWT\\Parsing\\Decoder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Parsing/Decoder.php',
+        'Lcobucci\\JWT\\Parsing\\Encoder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Parsing/Encoder.php',
+        'Lcobucci\\JWT\\Signature' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signature.php',
+        'Lcobucci\\JWT\\Signer' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer.php',
+        'Lcobucci\\JWT\\Signer\\BaseSigner' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/BaseSigner.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\SignatureConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php',
+        'Lcobucci\\JWT\\Signer\\Hmac' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha512.php',
+        'Lcobucci\\JWT\\Signer\\Key' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key.php',
+        'Lcobucci\\JWT\\Signer\\Keychain' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Keychain.php',
+        'Lcobucci\\JWT\\Signer\\OpenSSL' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/OpenSSL.php',
+        'Lcobucci\\JWT\\Signer\\Rsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha512.php',
+        'Lcobucci\\JWT\\Token' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token.php',
+        'Lcobucci\\JWT\\ValidationData' => __DIR__ . '/..' . '/lcobucci/jwt/src/ValidationData.php',
         'League\\CommonMark\\Block\\Element\\AbstractBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractBlock.php',
         'League\\CommonMark\\Block\\Element\\AbstractStringContainerBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractStringContainerBlock.php',
         'League\\CommonMark\\Block\\Element\\BlockQuote' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/BlockQuote.php',
@@ -2712,6 +2910,25 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'League\\CommonMark\\Util\\RegexHelper' => __DIR__ . '/..' . '/league/commonmark/src/Util/RegexHelper.php',
         'League\\CommonMark\\Util\\UrlEncoder' => __DIR__ . '/..' . '/league/commonmark/src/Util/UrlEncoder.php',
         'League\\CommonMark\\Util\\Xml' => __DIR__ . '/..' . '/league/commonmark/src/Util/Xml.php',
+        'League\\Event\\AbstractEvent' => __DIR__ . '/..' . '/league/event/src/AbstractEvent.php',
+        'League\\Event\\AbstractListener' => __DIR__ . '/..' . '/league/event/src/AbstractListener.php',
+        'League\\Event\\BufferedEmitter' => __DIR__ . '/..' . '/league/event/src/BufferedEmitter.php',
+        'League\\Event\\CallbackListener' => __DIR__ . '/..' . '/league/event/src/CallbackListener.php',
+        'League\\Event\\Emitter' => __DIR__ . '/..' . '/league/event/src/Emitter.php',
+        'League\\Event\\EmitterAwareInterface' => __DIR__ . '/..' . '/league/event/src/EmitterAwareInterface.php',
+        'League\\Event\\EmitterAwareTrait' => __DIR__ . '/..' . '/league/event/src/EmitterAwareTrait.php',
+        'League\\Event\\EmitterInterface' => __DIR__ . '/..' . '/league/event/src/EmitterInterface.php',
+        'League\\Event\\EmitterTrait' => __DIR__ . '/..' . '/league/event/src/EmitterTrait.php',
+        'League\\Event\\Event' => __DIR__ . '/..' . '/league/event/src/Event.php',
+        'League\\Event\\EventInterface' => __DIR__ . '/..' . '/league/event/src/EventInterface.php',
+        'League\\Event\\Generator' => __DIR__ . '/..' . '/league/event/src/Generator.php',
+        'League\\Event\\GeneratorInterface' => __DIR__ . '/..' . '/league/event/src/GeneratorInterface.php',
+        'League\\Event\\GeneratorTrait' => __DIR__ . '/..' . '/league/event/src/GeneratorTrait.php',
+        'League\\Event\\ListenerAcceptor' => __DIR__ . '/..' . '/league/event/src/ListenerAcceptor.php',
+        'League\\Event\\ListenerAcceptorInterface' => __DIR__ . '/..' . '/league/event/src/ListenerAcceptorInterface.php',
+        'League\\Event\\ListenerInterface' => __DIR__ . '/..' . '/league/event/src/ListenerInterface.php',
+        'League\\Event\\ListenerProviderInterface' => __DIR__ . '/..' . '/league/event/src/ListenerProviderInterface.php',
+        'League\\Event\\OneTimeListener' => __DIR__ . '/..' . '/league/event/src/OneTimeListener.php',
         'League\\Flysystem\\AdapterInterface' => __DIR__ . '/..' . '/league/flysystem/src/AdapterInterface.php',
         'League\\Flysystem\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractAdapter.php',
         'League\\Flysystem\\Adapter\\AbstractFtpAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractFtpAdapter.php',
@@ -2768,6 +2985,54 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'League\\MimeTypeDetection\\FinfoMimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/FinfoMimeTypeDetector.php',
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
+        'League\\OAuth2\\Server\\AuthorizationServer' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationServer.php',
+        'League\\OAuth2\\Server\\AuthorizationValidators\\AuthorizationValidatorInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationValidators/AuthorizationValidatorInterface.php',
+        'League\\OAuth2\\Server\\AuthorizationValidators\\BearerTokenValidator' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationValidators/BearerTokenValidator.php',
+        'League\\OAuth2\\Server\\CodeChallengeVerifiers\\CodeChallengeVerifierInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/CodeChallengeVerifiers/CodeChallengeVerifierInterface.php',
+        'League\\OAuth2\\Server\\CodeChallengeVerifiers\\PlainVerifier' => __DIR__ . '/..' . '/league/oauth2-server/src/CodeChallengeVerifiers/PlainVerifier.php',
+        'League\\OAuth2\\Server\\CodeChallengeVerifiers\\S256Verifier' => __DIR__ . '/..' . '/league/oauth2-server/src/CodeChallengeVerifiers/S256Verifier.php',
+        'League\\OAuth2\\Server\\CryptKey' => __DIR__ . '/..' . '/league/oauth2-server/src/CryptKey.php',
+        'League\\OAuth2\\Server\\CryptTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/CryptTrait.php',
+        'League\\OAuth2\\Server\\Entities\\AccessTokenEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/AccessTokenEntityInterface.php',
+        'League\\OAuth2\\Server\\Entities\\AuthCodeEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/AuthCodeEntityInterface.php',
+        'League\\OAuth2\\Server\\Entities\\ClientEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/ClientEntityInterface.php',
+        'League\\OAuth2\\Server\\Entities\\RefreshTokenEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/RefreshTokenEntityInterface.php',
+        'League\\OAuth2\\Server\\Entities\\ScopeEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/ScopeEntityInterface.php',
+        'League\\OAuth2\\Server\\Entities\\TokenInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/TokenInterface.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\AccessTokenTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/AccessTokenTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\AuthCodeTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/AuthCodeTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\ClientTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/ClientTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\EntityTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/EntityTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\RefreshTokenTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/RefreshTokenTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\ScopeTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/ScopeTrait.php',
+        'League\\OAuth2\\Server\\Entities\\Traits\\TokenEntityTrait' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/Traits/TokenEntityTrait.php',
+        'League\\OAuth2\\Server\\Entities\\UserEntityInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Entities/UserEntityInterface.php',
+        'League\\OAuth2\\Server\\Exception\\OAuthServerException' => __DIR__ . '/..' . '/league/oauth2-server/src/Exception/OAuthServerException.php',
+        'League\\OAuth2\\Server\\Exception\\UniqueTokenIdentifierConstraintViolationException' => __DIR__ . '/..' . '/league/oauth2-server/src/Exception/UniqueTokenIdentifierConstraintViolationException.php',
+        'League\\OAuth2\\Server\\Grant\\AbstractAuthorizeGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/AbstractAuthorizeGrant.php',
+        'League\\OAuth2\\Server\\Grant\\AbstractGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/AbstractGrant.php',
+        'League\\OAuth2\\Server\\Grant\\AuthCodeGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/AuthCodeGrant.php',
+        'League\\OAuth2\\Server\\Grant\\ClientCredentialsGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/ClientCredentialsGrant.php',
+        'League\\OAuth2\\Server\\Grant\\GrantTypeInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/GrantTypeInterface.php',
+        'League\\OAuth2\\Server\\Grant\\ImplicitGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/ImplicitGrant.php',
+        'League\\OAuth2\\Server\\Grant\\PasswordGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/PasswordGrant.php',
+        'League\\OAuth2\\Server\\Grant\\RefreshTokenGrant' => __DIR__ . '/..' . '/league/oauth2-server/src/Grant/RefreshTokenGrant.php',
+        'League\\OAuth2\\Server\\Middleware\\AuthorizationServerMiddleware' => __DIR__ . '/..' . '/league/oauth2-server/src/Middleware/AuthorizationServerMiddleware.php',
+        'League\\OAuth2\\Server\\Middleware\\ResourceServerMiddleware' => __DIR__ . '/..' . '/league/oauth2-server/src/Middleware/ResourceServerMiddleware.php',
+        'League\\OAuth2\\Server\\Repositories\\AccessTokenRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/AccessTokenRepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\AuthCodeRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/AuthCodeRepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\ClientRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/ClientRepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\RefreshTokenRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/RefreshTokenRepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\RepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/RepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\ScopeRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/ScopeRepositoryInterface.php',
+        'League\\OAuth2\\Server\\Repositories\\UserRepositoryInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/Repositories/UserRepositoryInterface.php',
+        'League\\OAuth2\\Server\\RequestEvent' => __DIR__ . '/..' . '/league/oauth2-server/src/RequestEvent.php',
+        'League\\OAuth2\\Server\\RequestTypes\\AuthorizationRequest' => __DIR__ . '/..' . '/league/oauth2-server/src/RequestTypes/AuthorizationRequest.php',
+        'League\\OAuth2\\Server\\ResourceServer' => __DIR__ . '/..' . '/league/oauth2-server/src/ResourceServer.php',
+        'League\\OAuth2\\Server\\ResponseTypes\\AbstractResponseType' => __DIR__ . '/..' . '/league/oauth2-server/src/ResponseTypes/AbstractResponseType.php',
+        'League\\OAuth2\\Server\\ResponseTypes\\BearerTokenResponse' => __DIR__ . '/..' . '/league/oauth2-server/src/ResponseTypes/BearerTokenResponse.php',
+        'League\\OAuth2\\Server\\ResponseTypes\\RedirectResponse' => __DIR__ . '/..' . '/league/oauth2-server/src/ResponseTypes/RedirectResponse.php',
+        'League\\OAuth2\\Server\\ResponseTypes\\ResponseTypeInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/ResponseTypes/ResponseTypeInterface.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
@@ -2995,6 +3260,17 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\SolutionsRepositories\\NullSolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
+        'Nyholm\\Psr7\\Factory\\HttplugFactory' => __DIR__ . '/..' . '/nyholm/psr7/src/Factory/HttplugFactory.php',
+        'Nyholm\\Psr7\\Factory\\Psr17Factory' => __DIR__ . '/..' . '/nyholm/psr7/src/Factory/Psr17Factory.php',
+        'Nyholm\\Psr7\\LowercaseTrait' => __DIR__ . '/..' . '/nyholm/psr7/src/LowercaseTrait.php',
+        'Nyholm\\Psr7\\MessageTrait' => __DIR__ . '/..' . '/nyholm/psr7/src/MessageTrait.php',
+        'Nyholm\\Psr7\\Request' => __DIR__ . '/..' . '/nyholm/psr7/src/Request.php',
+        'Nyholm\\Psr7\\RequestTrait' => __DIR__ . '/..' . '/nyholm/psr7/src/RequestTrait.php',
+        'Nyholm\\Psr7\\Response' => __DIR__ . '/..' . '/nyholm/psr7/src/Response.php',
+        'Nyholm\\Psr7\\ServerRequest' => __DIR__ . '/..' . '/nyholm/psr7/src/ServerRequest.php',
+        'Nyholm\\Psr7\\Stream' => __DIR__ . '/..' . '/nyholm/psr7/src/Stream.php',
+        'Nyholm\\Psr7\\UploadedFile' => __DIR__ . '/..' . '/nyholm/psr7/src/UploadedFile.php',
+        'Nyholm\\Psr7\\Uri' => __DIR__ . '/..' . '/nyholm/psr7/src/Uri.php',
         'Opis\\Closure\\Analyzer' => __DIR__ . '/..' . '/opis/closure/src/Analyzer.php',
         'Opis\\Closure\\ClosureContext' => __DIR__ . '/..' . '/opis/closure/src/ClosureContext.php',
         'Opis\\Closure\\ClosureScope' => __DIR__ . '/..' . '/opis/closure/src/ClosureScope.php',
@@ -3805,11 +4081,17 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'Psr\\EventDispatcher\\ListenerProviderInterface' => __DIR__ . '/..' . '/psr/event-dispatcher/src/ListenerProviderInterface.php',
         'Psr\\EventDispatcher\\StoppableEventInterface' => __DIR__ . '/..' . '/psr/event-dispatcher/src/StoppableEventInterface.php',
         'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
+        'Psr\\Http\\Message\\RequestFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/RequestFactoryInterface.php',
         'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
+        'Psr\\Http\\Message\\ResponseFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/ResponseFactoryInterface.php',
         'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
+        'Psr\\Http\\Message\\ServerRequestFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/ServerRequestFactoryInterface.php',
         'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
+        'Psr\\Http\\Message\\StreamFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/StreamFactoryInterface.php',
         'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
+        'Psr\\Http\\Message\\UploadedFileFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UploadedFileFactoryInterface.php',
         'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
+        'Psr\\Http\\Message\\UriFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UriFactoryInterface.php',
         'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
@@ -4211,6 +4493,11 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\Factory\\HttpFoundationFactory' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Factory/HttpFoundationFactory.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\Factory\\PsrHttpFactory' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Factory/PsrHttpFactory.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\Factory\\UploadedFile' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Factory/UploadedFile.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\HttpFoundationFactoryInterface' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/HttpFoundationFactoryInterface.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\HttpMessageFactoryInterface' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/HttpMessageFactoryInterface.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',
@@ -5066,6 +5353,30 @@ class ComposerStaticInitc9746fa0f3d32a4098c13b686ef8e3a9
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
         'phpDocumentor\\Reflection\\Utils' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/Utils.php',
+        'phpseclib\\Crypt\\AES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
+        'phpseclib\\Crypt\\Base' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
+        'phpseclib\\Crypt\\Blowfish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
+        'phpseclib\\Crypt\\DES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/DES.php',
+        'phpseclib\\Crypt\\Hash' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Hash.php',
+        'phpseclib\\Crypt\\RC2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC2.php',
+        'phpseclib\\Crypt\\RC4' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC4.php',
+        'phpseclib\\Crypt\\RSA' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RSA.php',
+        'phpseclib\\Crypt\\Random' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
+        'phpseclib\\Crypt\\Rijndael' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php',
+        'phpseclib\\Crypt\\TripleDES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
+        'phpseclib\\Crypt\\Twofish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
+        'phpseclib\\File\\ANSI' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ANSI.php',
+        'phpseclib\\File\\ASN1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
+        'phpseclib\\File\\ASN1\\Element' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1/Element.php',
+        'phpseclib\\File\\X509' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/X509.php',
+        'phpseclib\\Math\\BigInteger' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
+        'phpseclib\\Net\\SCP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SCP.php',
+        'phpseclib\\Net\\SFTP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP.php',
+        'phpseclib\\Net\\SFTP\\Stream' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
+        'phpseclib\\Net\\SSH1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH1.php',
+        'phpseclib\\Net\\SSH2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
+        'phpseclib\\System\\SSH\\Agent' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
+        'phpseclib\\System\\SSH\\Agent\\Identity' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent/Identity.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

@@ -1,4 +1,13 @@
 @extends('admin.layouts.master')
+@section('headerStyles')
+<style>
+    .select2-container--default .select2-results__group {
+        background-color: #556578;
+        color: white;
+        padding: 10px 10px;
+    }
+    </style>
+@endsection
 @section('content')
     <div class="">
         <div class="row">
@@ -72,68 +81,31 @@
                             </ul>
                             <div id="step-1">
                                 <form class="form-horizontal form-label-left">
-
+                                    <div id="category"></div>
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">نام<span class="required">*</span>
-                                        </label>
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">نوع محصول<span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="first-name" required="required"
-                                                   class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">نام خانوادگی<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="last-name" required="required"
-                                                   class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">نام میانی</label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text"
-                                                   name="middle-name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">جنسیت</label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div id="gender" class="btn-group" data-toggle="buttons">
-                                                <label class="btn btn-default" data-toggle-class="btn-primary"
+                                            <div id="new" class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-default active" data-toggle-class="btn-primary"
                                                        data-toggle-passive-class="btn-default">
-                                                    <input type="radio" name="gender" value="male"> &nbsp; مذکر &nbsp;
+                                                    <input type="radio" name="new" value="new" selected> &nbsp; نو &nbsp;
                                                 </label>
                                                 <label class="btn btn-primary" data-toggle-class="btn-primary"
                                                        data-toggle-passive-class="btn-default">
-                                                    <input type="radio" name="gender" value="female"> مونث
+                                                    <input type="radio" name="second-hand" value="second-hand"> دسته دوم
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">تاریخ تولد <span
-                                                class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12"
-                                                   required="required" type="text">
-                                        </div>
-                                    </div>
-
                                 </form>
 
                             </div>
-                            <div id="step-2">
-                                <h2 class="StepTitle">محتوای قدم دوم</h2>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-
-                                </p>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-
-                                </p>
+                            <div id="step-2">                              
+                                <form class="form-horizontal form-label-left">
+                                    <div class="form-group">
+                                       <div id="meson"></div>
+                                    </div>
+                                </form>
                             </div>
                             <div id="step-3">
                                 <h2 class="StepTitle">محتوای قدم سوم</h2>
@@ -168,5 +140,27 @@
             </div>
         </div>
     </div>
+@endsection
+@section('pageScripts')
+    <script>
+        $(document).ready(function() {
+            $selectElement = $('.select-category').select2({
+                placeholder: "لطفا یک مورد را انتخاب کنید",
+                allowClear: true
+              });
+            $('.select-group').select2({
+                placeholder: "لطفا یک مورد را انتخاب کنید",
+                allowClear: true
+            });
+            
+        });
+    </script>
+    <script>
+        $(window).ready(function(){
+            setInterval(function(){ 
+              $('.stepContainer').addClass("h-400")
+            }, 200);
+          });
+    </script>
 @endsection
 

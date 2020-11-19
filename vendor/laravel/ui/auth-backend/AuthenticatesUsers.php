@@ -2,8 +2,9 @@
 
 namespace Illuminate\Foundation\Auth;
 
-use Illuminate\Http\JsonResponse;
+use App\Models\Token;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
@@ -125,7 +126,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        //
+         
     }
 
     /**
@@ -161,6 +162,8 @@ trait AuthenticatesUsers
      */
     public function logout(Request $request)
     {
+      
+        
         $this->guard()->logout();
 
         $request->session()->invalidate();
@@ -168,6 +171,7 @@ trait AuthenticatesUsers
         $request->session()->regenerateToken();
 
         if ($response = $this->loggedOut($request)) {
+            
             return $response;
         }
 
@@ -184,7 +188,7 @@ trait AuthenticatesUsers
      */
     protected function loggedOut(Request $request)
     {
-        //
+       
     }
 
     /**

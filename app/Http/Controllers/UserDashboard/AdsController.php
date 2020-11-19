@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\UserDashboard;
 
-use App\Http\Controllers\Controller;
 use App\Models\Ads;
+use App\Models\Group;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AdsController extends Controller
 {
@@ -25,7 +27,9 @@ class AdsController extends Controller
      */
     public function create()
     {
-        return view('admin.ads.create');
+        $groups = Group::all();
+        $categories = Category::all();
+        return view('admin.ads.create', \compact('groups','categories'));
     }
 
     /**
