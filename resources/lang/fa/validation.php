@@ -252,6 +252,17 @@ return array(
         'color_amount' => 'موجودی رنگ',
         'method_of_introduction' => 'نحوه آشنایی',
         'verification_code' => 'کد تایید',
+        'group_id' => 'گروه آگهی',
+        'cat_id' => 'دسته بندی آگهی',
+        'type' => 'نوع محصول',
+        'sell_way' => 'نحوه فروش محصول',
+        'made_in' => 'کشور سازنده',
+        'market_price' => 'قیمت محصول مشابه در بازار',
+        'brand' => 'برند',
+        'material' => 'جنس',
+        'usage' => 'موارد استفاده',
+        'meson_id' => 'مزون',
+        'buy_at' => 'تاریخ خرید محصول',
 
           ),
 );

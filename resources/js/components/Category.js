@@ -38,9 +38,9 @@ class Category extends React.Component {
       const categories = this.state.categories.map((group) => ({label: group.name, value: group.id}));      
       let categoriesSelectBox;
       let groupSelectBox;
-        groupSelectBox =  <Select options = {options}  onChange={this.handleChange} placeholder= 'لطفا یک مورد را انتخاب کنید' />
+        groupSelectBox =  <Select options = {options} name = "group_id"  onChange={this.handleChange} placeholder= 'لطفا یک مورد را انتخاب کنید' />
       if (this.state.categories.length != 0) {
-        categoriesSelectBox =  <Select options = {categories} value = {this.state.selection} placeholder= 'لطفا یک مورد را انتخاب کنید' />
+        categoriesSelectBox =  <Select options = {categories} name = "cat_id" value = {this.state.selection} placeholder= 'لطفا یک مورد را انتخاب کنید' />
       }
       else{
         categoriesSelectBox = ''

@@ -2827,9 +2827,9 @@ span.tag a {
 }
 
 .form-control-feedback.right {
-    border-left: 1px solid #ccc;
-    right: 15px !important;
-    left: auto !important;
+    border-right: 1px solid #ccc;
+    left: 15px !important;
+    right: auto !important;
 }
 
 .form-group {
@@ -4510,7 +4510,7 @@ fieldset {
 .alert-danger,
 .alert-error {
     color: #fff;
-    background-color: rgba(231, 76, 60, 0.88);
+    background-color: rgba(210, 57, 73, 0.84);
     border-color: rgba(231, 76, 60, 0.88);
 }
 

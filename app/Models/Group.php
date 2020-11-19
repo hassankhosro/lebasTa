@@ -13,4 +13,8 @@ class Group extends Model
     {
         return $this->hasMany('App\Models\Category');
     }
+    public function advertisements()
+    {
+        return $this->hasMany('App\Models\Advertisement');
+    }
 }

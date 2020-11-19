@@ -15,11 +15,13 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\Meson');
     }
-
-    public function token()
+    
+    public function advertisements()
     {
-        return $this->hasOne('App\Models\Token');
+        return $this->hasMany('App\Models\Advertisement');
     }
+
+    
 
     /**
      * The attributes that are mass assignable.

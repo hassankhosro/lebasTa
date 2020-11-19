@@ -73756,6 +73756,7 @@ var Category = /*#__PURE__*/function (_React$Component) {
       var groupSelectBox;
       groupSelectBox = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_select__WEBPACK_IMPORTED_MODULE_3__["default"], {
         options: options,
+        name: "group_id",
         onChange: this.handleChange,
         placeholder: "\u0644\u0637\u0641\u0627 \u06CC\u06A9 \u0645\u0648\u0631\u062F \u0631\u0627 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F"
       });
@@ -73763,6 +73764,7 @@ var Category = /*#__PURE__*/function (_React$Component) {
       if (this.state.categories.length != 0) {
         categoriesSelectBox = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_select__WEBPACK_IMPORTED_MODULE_3__["default"], {
           options: categories,
+          name: "cat_id",
           value: this.state.selection,
           placeholder: "\u0644\u0637\u0641\u0627 \u06CC\u06A9 \u0645\u0648\u0631\u062F \u0631\u0627 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F"
         });
@@ -73861,12 +73863,23 @@ var Meson = /*#__PURE__*/function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "handleChange", function (e) {
       var self = _assertThisInitialized(_this);
 
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/mesons').then(function (response) {
-        console.log(response.data);
-        var categories = response.data;
+      self.setState({
+        mesons: []
       });
+
+      if (e.value == 'meson') {
+        axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/mesons').then(function (response) {
+          var mesons = response.data.data.data;
+          self.setState({
+            mesons: mesons
+          });
+        });
+      }
     });
 
+    _this.state = {
+      mesons: []
+    };
     return _this;
   }
 
@@ -73875,11 +73888,36 @@ var Meson = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var options = [{
         label: 'ثبت در مزون من و فروش به وسیله  مزون',
-        value: 'yes'
+        value: 'meson'
       }, {
         label: 'فروش تک محصولی',
-        value: 'no'
+        value: 'own'
       }];
+      var mesonOptions = this.state.mesons.map(function (meson) {
+        return {
+          label: meson.name,
+          value: meson.id
+        };
+      });
+      var mesonsSelectBox;
+      var mesonsSelectBoxTitle;
+      var mesonsSelectBoxStar;
+
+      if (this.state.mesons.length != 0) {
+        mesonsSelectBox = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_select__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          options: mesonOptions,
+          name: "meson_id",
+          value: this.state.selection,
+          placeholder: "\u0644\u0637\u0641\u0627 \u06CC\u06A9 \u0645\u0648\u0631\u062F \u0631\u0627 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F"
+        });
+        mesonsSelectBoxTitle = 'انتخاب مزون';
+        mesonsSelectBoxStar = '*';
+      } else {
+        mesonsSelectBox = '';
+        mesonsSelectBoxTitle = '';
+        mesonsSelectBoxStar = '';
+      }
+
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -73892,8 +73930,19 @@ var Meson = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_select__WEBPACK_IMPORTED_MODULE_3__["default"], {
         options: options,
         onChange: this.handleChange,
+        name: "sell_way",
+        value: this.state.selection,
         placeholder: "\u0644\u0637\u0641\u0627 \u06CC\u06A9 \u0645\u0648\u0631\u062F \u0631\u0627 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F"
-      }))));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "control-label col-md-3 col-sm-3 col-xs-12",
+        htmlFor: "first-name"
+      }, mesonsSelectBoxTitle, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "required"
+      }, mesonsSelectBoxStar)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6 col-sm-6 col-xs-12"
+      }, mesonsSelectBox)));
     }
   }]);
 

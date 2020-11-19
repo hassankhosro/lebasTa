@@ -70,8 +70,8 @@
                             </li>
                             <li class="w-100"><a><i class="fa fa-home"></i> مدیریت آگهی ها <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="{{ route('ads.index') }}">آگهی های شما</a></li>
-                                    <li><a href="{{ route('ads.create') }}">افزودن آگهی جدید</a></li>
+                                    <li><a href="{{ route('advertisement.index') }}">آگهی های شما</a></li>
+                                    <li><a href="{{ route('advertisement.create') }}">افزودن آگهی جدید</a></li>
                                 </ul>
                             </li>
 

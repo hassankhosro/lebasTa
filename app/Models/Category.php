@@ -21,4 +21,8 @@ class Category extends Model
     {
         return $this->belongsTo('App\Models\Category', 'parent_id');
     }
+    public function advertisements()
+    {
+        return $this->hasMany('App\Models\Advertisement');
+    }
 }

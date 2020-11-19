@@ -16,8 +16,8 @@ class HomeController extends Controller
     }
 
 
-    public function ads(){
-      return view('app.ads');
+    public function advertisements(){
+      return view('app.advertisements');
     }
 
 
@@ -33,7 +33,7 @@ class HomeController extends Controller
 
 
 
-    public function singleAds(){
-      return view('app.ads-single');
+    public function advertisement(){
+      return view('app.advertisements-single');
     }
 }

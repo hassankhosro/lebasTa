@@ -13,4 +13,12 @@ class Meson extends Model
 {
     return $this->belongsTo('App\Models\User');
 }
+
+public function advertisements()
+{
+    return $this->hasMany('App\Models\Advertisement');
+}
+
+
+
 }
