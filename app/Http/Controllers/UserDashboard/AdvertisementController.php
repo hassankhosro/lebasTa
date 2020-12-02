@@ -18,7 +18,8 @@ class AdvertisementController extends Controller
      */
     public function index()
     {
-        return view('admin.advertisements.index');
+        $advertisements = auth()->user()->advertisements;
+        return view('admin.advertisements.index', compact('advertisements'));
     }
 
     /**
@@ -51,9 +52,9 @@ class AdvertisementController extends Controller
                'sell_way' => $request->sell_way,
                'meson_id' => $request->meson_id,
                'name' => $request->name,
-               'price' => $request->price,
+               'price' => $this->fa_num_to_en($request->price),
                'made_in' => $request->made_in,
-               'market_price' => $request->market_price,
+               'market_price' => $this->fa_num_to_en($request->market_price),
                'brand' => $request->brand,
                'material' => $request->material,
                'buy_at' => $request->buy_at,

@@ -178,16 +178,17 @@
                                 
                             </div>
                             <div id="step-4">
-                                <div class="align-items-center d-flex form-group p-4">
-                                    <label class="control-label col-md-2 col-sm-2 text-left">تصاویر محصول</label>
-                                    <div class="col-md-10 col-sm-10">
-                                        <p>چند عکس را به جعبه زیر برای بارگیری چندگانه بکشید یا برای انتخاب عکس ها روی آن کلیک کنید.
-                                            اولین عکس به عنوان عکس اصلی محصول انتخاب میشود.</p>
-                                            <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
-                                    </div>
-                                </div> 
+                              
                             </div>
                         </form>
+                        <div class="align-items-center d-flex form-group p-4">
+                            <label class="control-label col-md-2 col-sm-2 text-left">تصاویر محصول</label>
+                            <div class="col-md-10 col-sm-10">
+                                <p>چند عکس را به جعبه زیر برای بارگیری چندگانه بکشید یا برای انتخاب عکس ها روی آن کلیک کنید.
+                                    اولین عکس به عنوان عکس اصلی محصول انتخاب میشود.</p>
+                                    <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+                            </div>
+                        </div> 
                     </div>
                         <!-- End SmartWizard Content -->
                     </div>

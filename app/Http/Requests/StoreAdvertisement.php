@@ -33,7 +33,7 @@ class StoreAdvertisement extends FormRequest
             'cat_id' => 'required|max:100000000000|regex:/^[0-9]+$/u',
             'type' => 'required|in:unused,secondhand',
             'sell_way' => 'required|in:own,meson',
-            'meson_id' => 'nullable|max:100000000000|regex:/^[0-9]+$/u',
+            'meson_id' => 'required_if:sell_way,==,meson|nullable|max:100000000000|regex:/^[0-9]+$/u',
             'name' => 'required|max:100|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
             'price' => ['required','regex:/^([0-9]+$)|^([۰-۹]+$)/','max:99999999999999','min:1'],
             'made_in' => 'required|max:100|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
@@ -42,7 +42,7 @@ class StoreAdvertisement extends FormRequest
             'material' => 'nullable|max:50|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
             // 'buy_at' => 'required|unique:posts|max:255',
             'usage' => 'nullable|max:50|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
-            'description' => 'required|min:10|max:1000',
+            'description' => 'nullable|min:10|max:1000',
         ];
     }
 }
