@@ -61,7 +61,7 @@ class Controller extends BaseController
             $this->watermark($file);
         }
         if ($resize == true && in_array($contentType, $imageMimeTypes)) {
-            $sizes = ["300" => "300"];
+            $sizes = ["300" => "300", "100" => "100"];
 
             return $url['images'] = $this->resize($file, $sizes, $filePath, $fileName);
         } else {

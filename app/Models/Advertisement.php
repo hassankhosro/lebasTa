@@ -5,11 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Dyrynda\Database\Support\CascadeSoftDeletes;
 
 
 class Advertisement extends Model
 {
-    use HasFactory,Sluggable;
+    use HasFactory,Sluggable,SoftDeletes, CascadeSoftDeletes;
 
     public function sluggable()
     {
@@ -21,6 +23,8 @@ class Advertisement extends Model
     }
 
     protected $guarded = ['id'];
+    protected $dates = ['deleted_at'];
+    protected $cascadeDeletes = ['galleries'];
 
 
     public function meson()
@@ -39,5 +43,13 @@ class Advertisement extends Model
     {
         return $this->belongsTo('App\Models\User');
     }
+    public function features()
+    {
+     return $this->belongsToMany('App\Models\Feature')->withPivot('value');
+   }
+    public function galleries()
+    {
+     return $this->hasMany('App\Models\Gallery');
+   }
 
 }

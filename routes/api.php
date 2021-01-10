@@ -28,5 +28,6 @@ Route::get('/groups', function () {
 // Route::post('login','Api\RegisterController@login');
 // Route::post('register','Api\RegisterController@register');
 Route::get('/mesons', 'Api\MesonController@getUserMesons')->middleware('auth:api');
+Route::get('/features/{cat_id}', 'Api\FeatureController@getCategoryFeatures')->middleware('auth:api');
 Route::get('/categories/{g_id}', 'Api\CategoryController@index');
 Route::get('/meson/{u_id}', 'Api\MesonController@getUserMesons');

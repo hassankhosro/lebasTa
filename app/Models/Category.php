@@ -4,10 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Dyrynda\Database\Support\CascadeSoftDeletes;
+
 
 class Category extends Model
 {
-    use HasFactory;
+    use HasFactory,SoftDeletes, CascadeSoftDeletes;
+    protected $dates = ['deleted_at'];
+    protected $cascadeDeletes = ['children', 'advertisements', 'features'];
 
     public function group()
     {
@@ -24,5 +29,9 @@ class Category extends Model
     public function advertisements()
     {
         return $this->hasMany('App\Models\Advertisement');
+    }
+    public function features()
+    {
+        return $this->hasMany('App\Models\Feature');
     }
 }

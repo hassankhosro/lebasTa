@@ -16,12 +16,13 @@ class CreateGalleriesTable extends Migration
         Schema::create('galleries', function (Blueprint $table) {
             $table->id();
             $table->text('filename');
-            $table->bigInteger('advertisements_id')->unsigned()->index();
+            $table->bigInteger('advertisement_id')->unsigned()->index();
             $table->timestamps();
+            $table->softDeletes();
 
 
 
-            $table->foreign('advertisements_id')->references('id')->on('advertisements')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('advertisement_id')->references('id')->on('advertisements')->onDelete('cascade')->onUpdate('cascade');
 
         });
     }

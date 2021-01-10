@@ -14,3 +14,4 @@ require('./bootstrap');
 
 require('./components/Category');
 require('./components/Meson');
+require('./components/Feature');

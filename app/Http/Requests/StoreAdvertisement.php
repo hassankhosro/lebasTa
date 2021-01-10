@@ -43,6 +43,8 @@ class StoreAdvertisement extends FormRequest
             // 'buy_at' => 'required|unique:posts|max:255',
             'usage' => 'nullable|max:50|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
             'description' => 'nullable|min:10|max:1000',
+            'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:3000',
+            'features.*' => 'nullable|max:100|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u'
         ];
     }
 }

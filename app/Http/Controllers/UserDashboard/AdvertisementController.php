@@ -3,11 +3,15 @@
 namespace App\Http\Controllers\UserDashboard;
 
 use App\Models\Group;
+use App\Models\Feature;
+use App\Models\Gallery;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Advertisement;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreAdvertisement;
+use Illuminate\Support\Facades\DB;
+
 
 class AdvertisementController extends Controller
 {
@@ -18,7 +22,7 @@ class AdvertisementController extends Controller
      */
     public function index()
     {
-        $advertisements = auth()->user()->advertisements;
+        $advertisements = auth()->user()->advertisements()->orderBy('id', 'desc')->get();
         return view('admin.advertisements.index', compact('advertisements'));
     }
 
@@ -44,6 +48,7 @@ class AdvertisementController extends Controller
     public function store(StoreAdvertisement $request)
     {
         !isset($request->meson_id) ?? $request->meson_id == null;
+        DB::transaction(function () use ($request) {
        $advertisement = Advertisement::create(
            [
                'group_id' => $request->group_id,
@@ -63,6 +68,36 @@ class AdvertisementController extends Controller
                'user_id' => auth()->user()->id,
            ]
         );
+
+        if ($advertisement) {
+            //image gallery
+            if ($request->images != null) {
+                foreach (array_slice($request->images, 0, 6) as $image) {
+                    $image = $this->uploadFile($image, false, true);
+                    Gallery::create([
+                      'filename' => $image,
+                      'advertisement_id' => $advertisement->id
+                    ]);
+                }
+            }
+
+
+            //get all features of product
+            $featureIds = [];
+            if ($request->get('features')) {
+                foreach ($request->get('features') as $featureId=>$featureValue) {
+                    $feature = Feature::find($featureId);
+                    if ($feature) {
+                        $featureIds[$feature->id] = ['value'=>$featureValue];
+                    }
+                }
+
+                $advertisement->features()->sync($featureIds);
+            }
+        }
+      });
+
+
         alert()->success('آگهی شما با موفقیت ثبت شد و پس از تایید ناظران بر روی سایت قرار خواهد گرفت.', 'ثبت شد')->autoclose(10000)->confirmButton('متوجه شدم');
         return redirect()->route('advertisement.index');
     }
@@ -75,7 +110,7 @@ class AdvertisementController extends Controller
      */
     public function show(Advertisement $advertisement)
     {
-        //
+      return view('admin.advertisements.show', compact('advertisement'));
     }
 
     /**
@@ -107,8 +142,17 @@ class AdvertisementController extends Controller
      * @param  \App\Models\Advertisement  $advertisement
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Advertisement $advertisement)
+    public function destroy(Request $request)
     {
-        //
+      $request->validate([
+       'id' => 'required|numeric|min:1|max:10000000000|regex:/^[0-9]+$/u',
+      ]);
+      $advertisement = Advertisement::find($request->id);
+        if($advertisement->user_id !== auth()->user()->id)
+        {
+          alert()->error('شما مجوز مورد نظر را ندارید.', 'انجام نشد');
+          return redirect()->back();
+        }
+         $advertisement->delete();
     }
 }

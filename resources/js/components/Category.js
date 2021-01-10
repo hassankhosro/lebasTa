@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Select from 'react-select'
+import Feature from './Feature';
+
 
 
 
@@ -11,7 +13,8 @@ class Category extends React.Component {
     super(props);
     this.state = { 
       groups: [],
-      categories: []
+      categories: [],
+      features: []
      };
   }
   
@@ -33,6 +36,16 @@ class Category extends React.Component {
       self.setState( { categories: categories } );
     })
 };
+
+showFeature = e => {
+    var self = this;
+    self.setState( { features: [] } );
+    axios.get('/api/features/' + e.value)
+    .then(function (response) {
+      var features = response.data;
+      self.setState( { features: features } );
+    })
+};
     render() {
       const options = this.state.groups.map((group) => ({label: group.name, value: group.id}));      
       const categories = this.state.categories.map((group) => ({label: group.name, value: group.id}));      
@@ -40,7 +53,7 @@ class Category extends React.Component {
       let groupSelectBox;
         groupSelectBox =  <Select options = {options} name = "group_id"  onChange={this.handleChange} placeholder= 'لطفا یک مورد را انتخاب کنید' />
       if (this.state.categories.length != 0) {
-        categoriesSelectBox =  <Select options = {categories} name = "cat_id" value = {this.state.selection} placeholder= 'لطفا یک مورد را انتخاب کنید' />
+        categoriesSelectBox =  <Select options = {categories} name = "cat_id" id="cat-select" onChange={this.showFeature} value = {this.state.selection} placeholder= 'لطفا یک مورد را انتخاب کنید' />
       }
       else{
         categoriesSelectBox = ''
@@ -60,6 +73,9 @@ class Category extends React.Component {
            <div className="col-md-6 col-sm-6 col-xs-12">
               {categoriesSelectBox}
            </div>
+        </div>
+        <div  className="form-group">
+        <Feature dataFromParent = {this.state.features.data}  />
         </div>
      </div>
       );

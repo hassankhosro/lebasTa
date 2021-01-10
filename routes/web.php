@@ -19,10 +19,15 @@ Auth::routes();
 //user-dashboard
 Route::namespace('UserDashboard')->prefix('user-dashboard')->middleware('auth')->group(function () {
 
+    //verification
     Route::get('/', 'DashboardController@index')->name('dashboard');
     Route::get('verification', 'VerificationController@index')->name('verification.index');
     Route::any('verification/sms/{mobileCode?}', 'VerificationController@sms')->name('verification.sms');
+
+
+    //ads
     Route::resource('advertisement', 'AdvertisementController');
+    Route::post('advertisement/delete', 'AdvertisementController@destroy')->name('advertisement.delete');
 
 
 });
@@ -34,6 +39,3 @@ Route::get('/ads', 'HomeController@ads')->name('ads');
 Route::get('/ads/{id}/show', 'HomeController@singleAds')->name('ads.show');
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{id}/show', 'HomeController@singleBlog')->name('blog.show');
-
-
-

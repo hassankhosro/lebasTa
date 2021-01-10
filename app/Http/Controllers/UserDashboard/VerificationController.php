@@ -21,11 +21,9 @@ class VerificationController extends Controller
     public function index()
     {
         $user = \Auth::user();
-        // dd(request()->all());
         if (\Auth::user()->status != 1) {
             if ($user->sms_date >= Carbon::now()->subMinutes(10)->timestamp) {
                 $finishingTime = Carbon::parse($user->sms_date)->addMinutes(10)->timestamp . '000';
-                // alert()->error('کد تایید قبلا ارسال شده است')->autoclose(8000);
                 return view('admin.verification', compact('finishingTime'));
             }
             $code = mt_rand(1111, 9999);

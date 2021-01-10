@@ -32,7 +32,7 @@ class CreateAdvertisementsTable extends Migration
             $table->string('brand')->nullable();
             $table->string('material')->nullable();
             $table->string('usage')->nullable();
-            $table->text('image')->default('img/advertisement.png');
+            $table->text('image')->default('/img/advertisement.png');
             $table->timestamp('buy_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
